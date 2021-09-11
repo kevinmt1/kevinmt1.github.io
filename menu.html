@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBam - Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="col-1">
+                <div class="navbar">
+                    <img src="ASSETS/SVG_Logo.svg.png" alt="" class="logo">
+                    <div class="navigation" id="menutab">
+                        <ul class="nav-tab">
+                            <li><a class="nav-content" href="home.html">HOME</a></li>
+                            <li>
+                                <div class="dropdown">
+                                <a style ="width: 110px;"class="nav-content" href="menu.html">MENU<img style="width: 18px;padding: 0px 0px 2px 5px;"src="ASSETS/arrow down.png" alt=""></a>
+                                    <ul id="menulist" class="dropdown-content">
+                                        <li><a class="content" href="menu.html">Food</a></li>
+                                        <li><a class="content"  href="menu.html">Beverages</a></li>
+                                        <li><a class="content"  href="menu.html">Dessert</a></li>
+                                    </ul>
+                                </div>
+                            </li>                          
+                            <li><a class="nav-content" href="aboutUs.html">ABOUT US</a></li>
+                            <li><a class="nav-content" href="location.html">LOCATION</a></li>
+                            <li><a class="nav-content" href="contactus.html">CONTACT US</a></li>
+                        </ul>                       
+                    </div>                       
+                    <img id="menu-btn" class ="menu-button"src="ASSETS/120px-Hamburger_icon_white.svg.png" alt="" onclick="openmenu()">
+                </div>
+                <div class="banner">
+                    <div class="line"></div>
+                    <p class="text-1"><b>OUR MENU</b></p>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="ASSETS/left-arrow.png" alt="" class="arrow" id="left-arrow">
+                <a href="contactus.html">
+                    <div class="img-slider">
+                        <img src="ASSETS/banner-1.png" alt="" class="slide">
+                        <img src="ASSETS/banner-2.png" alt="" class="slide">
+                        <img src="ASSETS/banner-3.png" alt="" class="slide">
+                        <img src="ASSETS/banner-4.png" alt="" class="slide">
+                    </div>
+                </a>
+                
+                <img src="ASSETS/right-arrow.png" alt="" class="arrow" id="right-arrow">
+            </div>
+            <div class="col-3">
+                <p class="text-2" style="margin: 0px 55px 0px 55px;">Feast your eyes with our various selection of menu</p>
+                <p class="food-text">FOODS</p>
+                <div class="menu-slider">
+                    <div class="recommendation-menu">
+                        <div class="card">
+                            <div class="card-img">
+                                <a href=""><img src="ASSETS/hotteok.jpg" alt=""></a>
+                            </div>
+                            <div class="card-description">
+                                <a href=""><p class="text-2" style="color: #d3af37;">HOTTEOK</p></a>
+                                <p class="text-3">Korean Pancake with</p>
+                                <p class="text-3">Red Bean Filling</p>
+                            </div>
+                            <div class="order">
+                                <a href="contactus.html">
+                                    <div class="order-box">
+                                        <p class="pricing-text">ORDER NOW</p>
+                                        <p class="price">Rp 25,000</p>
+                                    </div> 
+                                </a>                                       
+                            </div>                    
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <a href=""><img src="ASSETS/fried chicken.jpeg" alt=""></a>
+                            </div>
+                            <div class="card-description">
+                                <a href=""><p class="text-2" style="color: #d3af37;">KOREAN FRIED CHICKEN</p></a>
+                                <p class="text-3">Fried Chicken Wings with</p>
+                                <p class="text-3">Authentic Korean Spicy Sauce</p>
+                            </div>     
+                            <div class="order">
+                                <a href="contactus.html">
+                                    <div class="order-box">
+                                        <p class="pricing-text">ORDER NOW</p>
+                                        <p class="price">Rp 35,000</p>
+                                    </div> 
+                                </a>                               
+                            </div>               
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <a href=""><img src="ASSETS/bbimbap.jpg" alt=""></a>
+                            </div>
+                            <div class="card-description">
+                                <a href=""><p class="text-2" style="color: #d3af37;">BBIMBAP</p></a>
+                                <p class="text-3">Steamed Rice with</p>
+                                <p class="text-3">Various Meat and Vegetable</p>
+                            </div>
+                            <div class="order">
+                                <a href="contactus.html">
+                                    <div class="order-box">
+                                        <p class="pricing-text">ORDER NOW</p>
+                                        <p class="price">Rp 30,000</p>
+                                    </div> 
+                                </a>                                                            
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <a href=""><img src="ASSETS/kimchi.jpg" alt=""></a>
+                            </div>
+                            <div class="card-description">
+                                <a href=""><p class="text-2" style="color: #d3af37;">KIMCHI</p></a>
+                                <p class="text-3">Salted Fermented Chinese Cabbage</p>
+                                <p class="text-3">and Radish</p>
+                            </div>
+                            <div class="order">
+                                <a href="contactus.html">
+                                    <div class="order-box">
+                                        <p class="pricing-text">ORDER NOW</p>
+                                        <p class="price">Rp 38,000</p>
+                                    </div> 
+                                </a>                                
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <a href=""><img src="ASSETS/samgyeopsal.jpg" alt=""></a>
+                            </div>
+                            <div class="card-description">
+                                <a href=""><p class="text-2" style="color: #d3af37;">SAMGYEOPSAL</p></a>
+                                <p class="text-3">Grilled Pork Belly</p>
+                                <p class="text-3">with Barbeque Sauce</p>
+                            </div>
+                            <div class="order">
+                                <a href="contactus.html">
+                                    <div class="order-box">
+                                        <p class="pricing-text">ORDER NOW</p>
+                                        <p class="price">Rp 65,000</p>
+                                    </div> 
+                                </a>                                
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <a href=""><img src="ASSETS/tteokboki.jpeg" alt=""></a>
+                            </div>
+                            <div class="card-description">
+                                <a href=""><p class="text-2" style="color:#d3af37">TTEOKBOKI</p></a>
+                                <p class="text-3">Stir-Fried Rice Cakes</p>
+                                <p class="text-3">with Chili Paste and Soy Sauce</p>
+                            </div>
+                            <div class="order">
+                                <a href="contactus.html">
+                                    <div class="order-box">
+                                        <p class="pricing-text">ORDER NOW</p>
+                                        <p class="price">Rp 25,000</p>
+                                    </div> 
+                                </a>                                 
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <a href=""><img src="ASSETS/beef bulgogi.jpg" alt=""></a>
+                            </div>
+                            <div class="card-description">
+                                <a href=""><p class="text-2" style="color:#d3af37">Beef Bulgogi</p></a>
+                                <p class="text-3">Grilled Beef with</p>
+                                <p class="text-3">Homemade Bulgogi Sauce</p>
+                            </div>
+                            <div class="order">
+                                <a href="contactus.html">
+                                    <div class="order-box">
+                                        <p class="pricing-text">ORDER NOW</p>
+                                        <p class="price">Rp 45,000</p>
+                                    </div> 
+                                </a>                               
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <a href=""><img src="ASSETS/haejangguk.jpg" alt=""></a>
+                            </div>
+                            <div class="card-description">
+                                <a href=""><p class="text-2" style="color:#d3af37">Haejangguk</p></a>
+                                <p class="text-3">Korean Traditional Soup with</p>
+                                <p class="text-3">Ribs, Seafood, and Chinese Cabbage</p>
+                            </div>
+                            <div class="order">
+                                <a href="contactus.html">
+                                    <div class="order-box">
+                                        <p class="pricing-text">ORDER NOW</p>
+                                        <p class="price">Rp 18,000</p>
+                                    </div> 
+                                </a>                                 
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <a href=""><img src="ASSETS/jjangmyeon.webp" alt=""></a>
+                            </div>
+                            <div class="card-description">
+                                <a href=""><p class="text-2" style="color:#d3af37">Jjangmyeon</p></a>
+                                <p class="text-3">Stir-fried Korean Noodle</p>
+                                <p class="text-3">with Beef and Soy Sauce</p>
+                            </div>
+                            <div class="order">
+                                <a href="contactus.html">
+                                    <div class="order-box">
+                                        <p class="pricing-text">ORDER NOW</p>
+                                        <p class="price">Rp 30,000</p>
+                                    </div> 
+                                </a>                              
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <p class="food-text">BEVERAGES</p>
+                <div class="beverages-menu">
+                    <div class="bev-card">
+                        <div class="bev-card-img">
+                            <img src="ASSETS/Beverages/Apple Juice.png" alt="">
+                        </div>
+                        <div class="bev-card-description">
+                            <p class="text-2" style="color:#d3af37">Apple Juice</p>
+                        </div>
+                        <div class="order">
+                            <a href="contactus.html">
+                                <div class="order-box">
+                                    <p class="pricing-text">ORDER NOW</p>
+                                    <p class="price">Rp 20,000</p>
+                                </div> 
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="bev-card">
+                        <div class="bev-card-img">
+                            <img src="ASSETS/Beverages/Bubble Milk Tea.png" alt="">
+                        </div>
+                        <div class="bev-card-description">
+                            <p class="text-2" style="color:#d3af37">Bubble Milk Tea</p>
+                        </div>
+                        <div class="order">
+                            <a href="contactus.html">
+                                <div class="order-box">
+                                    <p class="pricing-text">ORDER NOW</p>
+                                    <p class="price">Rp 18,000</p>
+                                </div> 
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="bev-card">
+                        <div class="bev-card-img">
+                            <img src="ASSETS/Beverages/Guava Juice.png" alt="">
+                        </div>
+                        <div class="bev-card-description">
+                            <p class="text-2" style="color:#d3af37">Guava Juice</p>
+                        </div>
+                        <div class="order">
+                            <a href="contactus.html">
+                                <div class="order-box">
+                                    <p class="pricing-text">ORDER NOW</p>
+                                    <p class="price">Rp 16,000</p>
+                                </div> 
+                            </a>   
+                        </div>
+                    </div>
+                    <div class="bev-card">
+                        <div class="bev-card-img">
+                            <img src="ASSETS/Beverages/Honey Lemon Tea.png" alt="">
+                        </div>
+                        <div class="bev-card-description">
+                            <p class="text-2" style="color:#d3af37">Lemon Tea</p>
+                        </div>
+                        <div class="order">
+                            <a href="contactus.html">
+                                <div class="order-box">
+                                    <p class="pricing-text">ORDER NOW</p>
+                                    <p class="price">Rp 20,000</p>
+                                </div> 
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="bev-card">
+                        <div class="bev-card-img">
+                            <img src="ASSETS/Beverages/Iced Coffee.png" alt="">
+                        </div>
+                        <div class="bev-card-description">
+                            <p class="text-2" style="color:#d3af37">Iced Coffee</p>
+                        </div>
+                        <div class="order">
+                            <a href="contactus.html">
+                                <div class="order-box">
+                                    <p class="pricing-text">ORDER NOW</p>
+                                    <p class="price">Rp 20,000</p>
+                                </div> 
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="bev-card">
+                        <div class="bev-card-img">
+                            <img src="ASSETS/Beverages/Lime Soda.png" alt="">
+                        </div>
+                        <div class="bev-card-description">
+                            <p class="text-2" style="color:#d3af37">Lime Soda</p>
+                        </div>
+                        <div class="order">
+                            <a href="contactus.html">
+                                <div class="order-box">
+                                    <p class="pricing-text">ORDER NOW</p>
+                                    <p class="price">Rp 22,000</p>
+                                </div> 
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="bev-card">
+                        <div class="bev-card-img">
+                            <img src="ASSETS/Beverages/Mineral Water.png" alt="">
+                        </div>
+                        <div class="bev-card-description">
+                            <p class="text-2" style="color:#d3af37">Mineral Water</p>
+                        </div>
+                        <div class="order">
+                            <a href="contactus.html">
+                                <div class="order-box">
+                                    <p class="pricing-text">ORDER NOW</p>
+                                    <p class="price">Rp 5,000</p>
+                                </div> 
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="bev-card">
+                        <div class="bev-card-img">
+                            <img src="ASSETS/Beverages/Orange Juice.png" alt="">
+                        </div>
+                        <div class="bev-card-description">
+                            <p class="text-2" style="color:#d3af37">Orange Juice</p>
+                        </div>
+                        <div class="order">
+                            <a href="contactus.html">
+                                <div class="order-box">
+                                    <p class="pricing-text">ORDER NOW</p>
+                                    <p class="price">Rp 22,000</p>
+                                </div> 
+                            </a>  
+                        </div>
+                    </div>
+
+                </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <img src="ASSETS/SVG_Logo.svg.png" alt="" class="logo">
+        <p class="text-3">©2021 All Rights Reserved, HCI BX-01</p>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
+

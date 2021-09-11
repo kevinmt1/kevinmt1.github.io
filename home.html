@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBam - Homepage</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="container">    
+        <div class="row">
+            <div class="col-1">
+                <div class="navbar">
+                    <img src="ASSETS/SVG_Logo.svg.png" alt="" class="logo">
+                    <div class="navigation" id="menutab">
+                        <ul class="nav-tab">
+                            <li><a class="nav-content" href="home.html">HOME</a></li>
+                            <li>
+                                <div class="dropdown">
+                                <a style ="width: 110px;"class="nav-content" href="menu.html">MENU<img style="width: 18px;padding: 0px 0px 2px 5px;"src="ASSETS/arrow down.png" alt=""></a>
+                                    <ul id="menulist" class="dropdown-content">
+                                        <li><a class="content" href="menu.html">Food</a></li>
+                                        <li><a class="content"  href="menu.html">Beverages</a></li>
+                                        <li><a class="content"  href="menu.html">Dessert</a></li>
+                                    </ul>
+                                </div>
+                            </li>                          
+                            <li><a class="nav-content" href="aboutUs.html">ABOUT US</a></li>
+                            <li><a class="nav-content" href="location.html">LOCATION</a></li>
+                            <li><a class="nav-content" href="contactus.html">CONTACT US</a></li>
+                        </ul>                       
+                    </div>                       
+                                
+                    <img id="menu-btn" class ="menu-button"src="ASSETS/120px-Hamburger_icon_white.svg.png" alt="" onclick="openmenu()">
+                </div>
+                <div class="banner" id="banner">
+                    <p class="text-1">DANBAM</p>
+                    <img src="ASSETS/SVG_Logo.svg.png" alt="" class="logo2">
+                    <p class="text-1">Made With Love</p>
+                    <p class="text-2">by Our Chef</p>
+                </div>
+                
+            </div>
+            <div class="col-2">
+                <p class="text-2">ABOUT</p>
+                <p class="text-1" style="color: #d3af37; margin-bottom: 40px;">DANBAM</p>
+                <p class="text-3" style="color: black; margin-bottom: 30px">A staple of Asia street food, DanBam honours the art of Korean taste in food specialized in Hotteok, Rice box, Japchae, Sandwich and its various Korean dishes with fresh ingredients, the new concept of cloud kitchen (online kitchen), and the bliss of great tasting street food.</p>
+                <p class="text-3" style="color: black">The young, vibrant and energetic management and operation team are highly committed to innovate the new way of enjoying rhythm of Korea cuisine. We promise to serve you the best and authentic and creative Korean food.</p>
+                    
+            </div>
+            <div class="col-3">
+                <p class="text-1" style="color: white; padding-top: 30px;">OUR RECOMMENDATION</p>
+                <div class="recommendation-menu">
+                    <div class="card">
+                        <div class="card-img">
+                            <a href=""><img src="ASSETS/hotteok.jpg" alt=""></a>
+                        </div>
+                        <div class="card-description">
+                            <a href=""><p class="text-2" style="color: #d3af37;">HOTTEOK</p></a>
+                            <p class="text-3">Korean Pancake with</p>
+                            <p class="text-3">Red Bean Filling</p>
+                        </div>                       
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <a href=""><img src="ASSETS/fried chicken.jpeg" alt=""></a>
+                        </div>
+                        <div class="card-description">
+                            <a href=""><p class="text-2" style="color: #d3af37;">KOREAN FRIED CHICKEN</p></a>
+                            <p class="text-3">Fried Chicken Wings with</p>
+                            <p class="text-3">Authentic Korean Spicy Sauce</p>
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <a href=""><img src="ASSETS/bbimbap.jpg" alt=""></a>
+                        </div>
+                        <div class="card-description">
+                            <a href=""><p class="text-2" style="color: #d3af37;">BBIMBAP</p></a>
+                            <p class="text-3">Steamed Rice with</p>
+                            <p class="text-3">Various Meat and Vegetable</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <a href=""><img src="ASSETS/kimchi.jpg" alt=""></a>
+                        </div>
+                        <div class="card-description">
+                            <a href=""><p class="text-2" style="color: #d3af37;">KIMCHI</p></a>
+                            <p class="text-3">Salted Fermented Chinese Cabbage</p>
+                            <p class="text-3">and Radish</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <a href=""><img src="ASSETS/samgyeopsal.jpg" alt=""></a>
+                        </div>
+                        <div class="card-description">
+                            <a href=""><p class="text-2" style="color: #d3af37;">SAMGYEOPSAL</p></a>
+                            <p class="text-3">Grilled Pork Belly</p>
+                            <p class="text-3">with Barbeque Sauce</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <a href=""><img src="ASSETS/tteokboki.jpeg" alt=""></a>
+                        </div>
+                        <div class="card-description">
+                            <a href=""><p class="text-2" style="color:#d3af37">TTEOKBOKI</p></a>
+                            <p class="text-3">Stir-Fried Rice Cakes</p>
+                            <p class="text-3">with Chili Paste and Soy Sauce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <p class="text-1" style="color:brown">OUR LOCATION</p>
+                <div class="loc">
+                    <div class="location">
+                        <p class="text-3" style="color:black">La Codefin Building, Jl. Kemang I</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0547556875827!2d106.81095491476927!3d-6.2565173954713815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11e8b313797%3A0x2267c7632700417a!2sEverplate%20Kemang!5e0!3m2!1sid!2sid!4v1624017225646!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="ASSETS/SVG_Logo.svg.png" alt="" class="logo">
+            <p class="text-3">©2021 All Rights Reserved, HCI BX-01</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

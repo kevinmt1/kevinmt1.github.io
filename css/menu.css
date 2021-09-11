@@ -1,0 +1,344 @@
+@font-face {
+    font-family: quicksand;
+    src: url(../ASSETS/Fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: prompt;
+    src: url(../ASSETS/Fonts/Prompt-Medium.ttf);
+}
+@font-face {
+    font-family: raleway;
+    src: url(../ASSETS/Fonts/Raleway/static/Raleway-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: quicksand;
+    text-decoration: none;
+    list-style: none;
+}
+
+.text-1{
+    font-size: 45px;
+}
+.text-2{
+    font-size: 30px;
+}
+.text-3{
+    font-size: 20px;
+    color: white;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.menu-button{
+    display: none;
+    width: 30px;
+}
+.navbar{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.75);
+    height: 75PX;
+}
+.navigation{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+}
+.navigation .nav-tab{
+    display: flex;
+}
+.navigation a{
+    font-size: 20px;
+    color: white;
+}
+.nav-content{
+    display: inline-block;
+    padding: 25px 20px 25px 20px;
+}
+.content{
+    width: 150px;
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(0, 0, 0, 0.75);
+}
+.navigation a:hover{
+    color: #d3af37;
+}
+.logo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 40px;
+}
+
+.dropdown-content li{
+    display: none;
+}
+@media screen and (min-width:970px)
+{
+    .dropdown-content li:hover{
+        color: #d3af37;
+    }
+    .dropdown:hover .dropdown-content li{
+        display: block;
+    }
+    .dropdown:hover .dropdown-content{
+        perspective: 1000px;
+    }
+    .dropdown:hover .dropdown-content li{
+         transform-origin: top center;
+         opacity: 0;
+    }
+    .dropdown:hover .dropdown-content li:nth-child(1){
+        animation: animate 300ms ease-in-out forwards;
+        animation-delay: -150ms;
+    }
+    .dropdown:hover .dropdown-content li:nth-child(2){
+        animation: animate 300ms ease-in-out forwards;
+        animation-delay: 0ms;
+    }
+    .dropdown:hover .dropdown-content li:nth-child(3){
+        animation: animate 300ms ease-in-out forwards;
+        animation-delay: 150ms;
+    }
+    .dropdown:hover .dropdown-content li:nth-child(4){
+        animation: animate 300ms ease-in-out forwards;
+        animation-delay: 300ms;
+    }
+    .dropdown:hover .dropdown-content li:nth-child(5){
+        animation: animate 300ms ease-in-out forwards;
+        animation-delay: 450ms;
+    }
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50%{
+        transform: rotateX(20deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+
+.row{
+    width: 100%;
+    height: auto;
+}
+.col-1{
+    background-image: url(../ASSETS/menu\ banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 550px;
+    width: 100%;
+    height: 70%;
+    opacity: 1;
+    visibility: inherit;
+    text-align: center;
+    color: white;
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(14, 14, 14);
+    padding-bottom: 25px;
+}
+#menu-btn{
+    display: none;
+}
+.banner{
+    margin-top: 180px;
+    transform: translateX(-20%);
+}
+.banner b{
+    font-family: raleway;
+    
+}
+.col-2{
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+.img-slider{
+    position: relative;
+    width: 900px;
+    height: 450px;
+    margin: 10px;
+}
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 5px;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.col-3{
+    color: #fafafa;
+    background-color: #585035;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+}
+.recommendation-menu{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 10% 40px 10%;
+}
+.order{
+    display: flex;
+    justify-content: center;
+}
+.card-img img{
+    width: 90%;
+    height: 300px;
+}
+.food-text{
+    margin-top: 40px;
+    font-family: prompt;
+    font-size: 40px;
+    color: #d3af37;
+}
+.order-box{
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #d3af37;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+}
+.pricing-text{
+    font-family: prompt;
+    font-size: 18px;
+
+}
+.beverages-menu{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 10% 40px 10%;
+}
+@media screen and (max-width:969px){
+    .col-1{
+        min-height: 250px;
+    }
+    .text-1{
+        font-size: 27px;
+    }
+    .text-2{
+        font-size: 24px;
+    }
+    .text-3{
+        font-size: 19px;
+    }
+    .navbar{
+        display: block;
+    }
+    .menu-button{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 44px;
+    }
+    .nav-content img{
+        display: none;
+    }
+
+    #menutab{
+        background-color: rgb(0, 0, 0, 0.75);
+        position: relative;
+        display: block;
+        overflow: hidden;
+        transition: 0.5s;
+        width: 100%;
+        z-index: 20;
+        left: 0.1%;
+    }
+    .navigation .nav-tab{
+        display: block;
+    }
+    
+    .nav-tab{
+        display: inline-block;
+    }
+    .navigation{
+        display: none;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .img-slider{
+        width: 560px;
+        height: 280px;
+    }
+    .recommendation-menu{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .beverages-menu{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-img img{
+        width: 150px;
+        height: 100px;
+    }
+    .bev-card-img img{
+        width: 75px;
+        height: 150px;
+    }
+    .menu{
+        margin: 0px 10px 0px 10px;
+        width: 180px;
+        height: 130px;
+    }
+    .arrow{
+        width: 15px;
+        height: 15px;
+    }
+    #left-arrow{
+        margin-left: 5px;
+    }
+    #right-arrow{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .img-slider{
+        width: 300px;
+        height: 150px;
+    }
+}

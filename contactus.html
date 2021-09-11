@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBam - Contact Us</title>
+    <link rel="stylesheet" href="css/contactUs.css">
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="col-1">
+                <div class="navbar">
+                    <img src="ASSETS/SVG_Logo.svg.png" alt="" class="logo">
+                    <div class="navigation" id="menutab">
+                        <ul class="nav-tab">
+                            <li><a class="nav-content" href="home.html">HOME</a></li>
+                            <li>
+                                <div class="dropdown">
+                                <a style ="width: 110px;"class="nav-content" href="menu.html">MENU<img style="width: 18px;padding: 0px 0px 2px 5px;"src="ASSETS/arrow down.png" alt=""></a>
+                                    <ul id="menulist" class="dropdown-content">
+                                        <li><a class="content" href="menu.html">Food</a></li>
+                                        <li><a class="content"  href="menu.html">Beverages</a></li>
+                                        <li><a class="content"  href="menu.html">Dessert</a></li>
+                                    </ul>
+                                </div>
+                            </li>                          
+                            <li><a class="nav-content" href="aboutUs.html">ABOUT US</a></li>
+                            <li><a class="nav-content" href="location.html">LOCATION</a></li>
+                            <li><a class="nav-content" href="contactus.html">CONTACT US</a></li>
+                        </ul>                       
+                    </div>                       
+                                
+                    <img id="menu-btn" class ="menu-button"src="ASSETS/120px-Hamburger_icon_white.svg.png" alt="" onclick="openmenu()">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="customer-service">
+                    <img src="ASSETS/customer-service.png" alt="" id="cs-banner">
+                    <p class="text-1"><b>CONTACT US</b></p>
+                </div>
+            </div>
+            <div class="col-3">
+                <p class="contact-text" id="title-text">Order or reserve a table on Danbam Restaurant is a piece of cake. Just fill in the form below and that's it!</p>
+                <div class="form-container">
+                    <form name="reservation">
+                        <div class="name-input">
+                            <label for="name"><p class="contact-text">Name</p></label>
+                            <input class ="box-input" type="text" name="nama" id="name">
+                        </div>
+                        <div class="email-input">
+                            <label for="e-mail"><p class="contact-text">E-mail</p></label>
+                            <input class ="box-input"  type="email" name="surel" id="e-mail">
+                        </div>
+                        <div class="gender">
+                            <p class="contact-text">Gender</p>
+                            <input class="gender-input" type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                            <input class="gender-input"  type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                            
+                        </div>
+                        <div class="loc-input">
+                            <label for="location"><p class="contact-text">Danbam's Branch Location</p></label>
+                            <select name="lokasi" id="location" class="selection">
+                                <option value="0" disabled selected hidden>Branch Location</option>
+                                <option value="loc-1">Danbam Everplate Kemang</option>
+                                <option value="loc-2">Danbam Marchand Hype Station Bintaro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="message">
+                            <label for="descript"><p class="contact-text">Message for Us</p></label>
+                            <textarea name="deskripsi" id="descript" cols="30" rows="10"></textarea>
+                        </div>
+                        
+                        <div class="latestInfo">
+                            <input type="checkbox" name="kirimInfo" id="sendInfo"><label for="sendInfo"><span> Send our latest information to your e-mail</span></label>
+                        </div>
+
+                        <span id="errorMsg"></span>
+                        <input type="reset" value="Reset" id="resetBtn" style="display: none;">
+                    </form>
+                    <div class="form-banner">
+                        <img src="ASSETS/danbam2.jpg" alt="" class="form-img">
+                        <div class="text-container">
+                            <div class="text-content">
+                                <p class="banner-text">PHONE</p>
+                                <p class="text-3">+6281234567890</p>
+                            </div>
+                            <div class="text-content">
+                                <p class="banner-text">E-MAIL</p>
+                                <p class="text-3">danbamrestaurant@gmail.com</p>
+                            </div>
+                            <div class="text-content">
+                                <p class="banner-text">OUR SOCIAL MEDIA</p>
+                                <a href="https://www.facebook.com"><img src="ASSETS/sosmed2/Layer_1.png" alt="" class="sosmed"></a>
+                                <a href="https://www.instagram.com"><img src="ASSETS/sosmed2/Layer_1_copy.png" alt="" class="sosmed"></a>
+                                <a href="https://www.youtube.com"><img src="ASSETS/sosmed2/Layer_1_copy_2.png" alt="" class="sosmed"></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <input class="submit-btn" type="submit" value="SUBMIT" onclick="validateData()">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="ASSETS/SVG_Logo.svg.png" alt="" class="logo">
+        <p class="text-3">©2021 All Rights Reserved, HCI BX-01</p>
+    </div>
+    <script src="js/validation.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
